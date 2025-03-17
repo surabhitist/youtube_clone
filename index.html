@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main_menu_bar">
+      <div class="main_menu_1">
+        <i class="fa fa-solid fa-bars hamburger_menu"></i>
+        <img src="images/youtube_logo.png" alt="logo" class="logo_image" />
+      </div>
+
+      <div class="main_menu_2">
+        <button class="dummy_button"></button>
+        <div class="search_box_mic">
+          <input type="text" id="search" name="search" class="search_box" />
+          <button class="search_icon_button">
+            <i class="fa fa-search search_icon"></i>
+          </button>
+          <button class="mic_button">
+            <i class="fa-solid fa-microphone mic_icon"></i>
+          </button>
+        </div>
+        <button class="dummy_button"></button>
+      </div>
+
+      <div class="main_menu_3">
+        <button class="plus_button">
+          <div class="plus_div">
+            <i class="fa fa-solid fa-plus plus_icon"></i>
+            <p class="create_text">Create</p>
+          </div>
+        </button>
+        <button class="bell_button">
+          <i class="fa-regular fa-bell bell_icon"></i>
+        </button>
+        <button class="notification_count_button">9+</button>
+        <img src="images/account_pic.jpg" alt="" class="account_pic_image" />
+      </div>
+    </div>
+
+    <div class="body_main_div">
+      <div class="body_left_div_big">
+
+        <div class="tab_screen_div">
+          <div class="tab_screen">
+            <i class="fa fa-solid fa-house white_color"></i>
+            <div class="white_color">Home</div>
+          </div>
+        </div>
+        <div class="tab_screen_div">
+          <div class="tab_screen">
+            <i class="fa fa-solid fa-video"></i>
+          </div>
+          <div class="white_color">Shorts</div>
+        </div>
+        <div class="tab_screen_div">
+          <div class="tab_screen">
+            <i class="fa fa-solid fa-house white_color"></i>
+            <div class="white_color">Home</div>
+          </div>
+        </div>
+        <div class="tab_screen_div">
+          <div class="tab_screen">
+            <i class="fa fa-solid fa-video"></i>
+          </div>
+          <div class="white_color">Shorts</div>
+        </div>
+        <div class="tab_screen_div">
+          <div class="tab_screen">
+            <i class="fa fa-solid fa-house white_color"></i>
+            <div class="white_color">Home</div>
+          </div>
+        </div>
+        <div class="tab_screen_div">
+          <div class="tab_screen">
+            <i class="fa fa-solid fa-video"></i>
+          </div>
+          <div class="white_color">Shorts</div>
+        </div>
+        <div class="tab_screen_div">
+          <div class="tab_screen">
+            <i class="fa fa-solid fa-house white_color"></i>
+            <div class="white_color">Home</div>
+          </div>
+        </div>
+        <div class="tab_screen_div">
+          <div class="tab_screen">
+            <i class="fa fa-solid fa-video"></i>
+          </div>
+          <div class="white_color">Shorts</div>
+        </div>
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-video"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Shorts</div>
+        </div>
+
+
+
+
+        <div class="left_item_1" id="list_item">
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-house"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Home</div>
+        </div>
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-video"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Shorts</div>
+        </div>
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-camera"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Subscription</div>
+        </div>
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-regular fa-circle"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Youtube music</div>
+        </div>
+
+        <hr class="line"/>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+        <div class="you_main_div">
+          <div class="you_div">
+            <span class="you_text">You</span>
+            <i class="fa-solid fa-greater-than"></i>
+          </div>
+        </div>
+        </div>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-regular fa-clock"></i>
+          </div>
+          <div class="body_left_div_big_1_2">History</div>
+        </div>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa-solid fa-list"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Playlists</div>
+        </div>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Your videos</div>
+        </div>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-clock"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Watch later</div>
+        </div>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-regular fa-thumbs-up"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Liked videos</div>
+        </div>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-download"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Downloads</div>
+        </div>
+        
+        <hr class="line"/>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+        <div class="you_main_div">
+          <div class="you_div">
+            <span class="you_text">Subscriptions</span>
+          </div>
+        </div>
+        </div>
+
+        <div
+          class="left_item_2 subs_div"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <img src="images/subscription_1.jpg" alt="" class="sub_img">
+          </div>
+          <div class="body_left_div_big_1_2">TRADEMAX ACA... <span class="blue_dot">&bull;</span></div>
+        </div>
+
+        <div
+          class="left_item_2 subs_div"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <img src="images/subscription_2.jpg" alt="" class="sub_img">
+          </div>
+          <div class="body_left_div_big_1_2">Ravindrababu Ra... <span class="blue_dot">&bull;</span></div>
+        </div>
+
+        <div
+          class="left_item_2 subs_div"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <img src="images/subscription_3.jpg" alt="" class="sub_img">
+          </div>
+          <div class="body_left_div_big_1_2">ARUN K MURALI</div>
+        </div>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-bars"></i>
+          </div>
+          <div class="body_left_div_big_1_2">All Subscriptions</div>
+        </div>
+
+        <hr class="line"/>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+        <div class="you_main_div">
+          <div class="you_div">
+            <span class="you_text">Explore</span>
+          </div>
+        </div>
+        </div>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-fire"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Trending</div>
+        </div>
+
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-video"></i></i>
+          </div>
+          <div class="body_left_div_big_1_2">Shorts</div>
+        </div>
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-solid fa-camera"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Subscription</div>
+        </div>
+        <div
+          class="left_item_2"
+          onmouseover="onhover()"
+          onmouseout="hoverout()"
+        >
+          <div class="body_left_div_big_1_1">
+            <i class="fa fa-regular fa-circle"></i>
+          </div>
+          <div class="body_left_div_big_1_2">Youtube music</div>
+        </div>
+
+        
+
+
+
+
+      </div>
+
+      <div class="body_left_div_small">Div 2</div>
+
+
+      <div class="body_right_div">
+        <div class="grid_div">
+          <div class="grid_item">
+            <img src="images/thumb_1.jpg" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_1.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <img src="images/thumb_2.jpg" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_2.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <img src="images/thumb_3.webp" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_3.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+
+          <div class="grid_item">
+            <img src="images/thumb_4.jpg" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_2.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <img src="images/thumb_5.jpg" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_3.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <img src="images/thumb_6.jpg" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_1.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <img src="images/thumb_7.jpg" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_3.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <img src="images/thumb_8.png" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_1.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <img src="images/thumb_9.jpg" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_2.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          
+          <div class="grid_item">
+            <img src="images/thumb_1.jpg" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_1.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <img src="images/thumb_2.jpg" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_2.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <img src="images/thumb_3.webp" alt="" class="thumb">
+            <div class="grid_content_main_div">
+              <div class="grid_content_div_1">
+                <img src="images/subscription_3.jpg" alt="" class="thumb_acc">
+              </div>
+              <div class="grid_content_div_2">
+                This indicator tells you EXACTLY when to BUY and SELL
+              </div>
+              <div class="grid_content_div_3">&#10247;</div>
+            </div>
+          </div>
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </body>
+</html>

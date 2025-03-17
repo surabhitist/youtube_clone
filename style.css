@@ -1,0 +1,1101 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  scrollbar-width: auto; /* Options: auto, thin, none */
+  scrollbar-color: #888 #b6b6b6; /* Thumb color, track color */
+  background-color: rgb(12, 12, 12);
+  margin-top: -60px;
+}
+
+@media (min-width: 1200px) {
+  .main_menu_bar {
+    z-index: 100;
+    background-color: rgb(181, 181, 240);
+    display: flex;
+    position: fixed;
+    width: 100%;
+  }
+
+  .main_menu_1 {
+    flex: 20%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger_menu {
+    font-size: 20px !important;
+    color: white !important;
+  }
+
+  .logo_image {
+    width: 135px;
+    margin-left: 10px;
+  }
+
+  .main_menu_2 {
+    flex: 70%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search_box_mic {
+    display: flex;
+    flex: 70%;
+  }
+
+  .dummy_button {
+    flex: 15%;
+    visibility: hidden;
+  }
+
+  .search_box {
+    background-color: rgb(12, 12, 12);
+    border: 0.5px solid rgb(86, 86, 86);
+    flex: 70%;
+    height: 35px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .search_icon_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(65, 65, 65);
+    border-left: 0px;
+    height: 38px;
+    flex: 10%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  .search_icon {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+
+  .mic_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(65, 65, 65);
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    margin-left: 10px;
+  }
+
+  .mic_icon {
+    color: white;
+    font-size: 18px;
+  }
+
+  .main_menu_3 {
+    flex: 10%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .plus_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(44, 44, 44);
+    height: 40px;
+    width: 100px;
+    border-radius: 100px;
+  }
+
+  .plus_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3px;
+  }
+
+  .plus_icon {
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .create_text {
+    font-size: 14px;
+    color: white;
+  }
+
+  .bell_button {
+    background-color: rgb(12, 12, 12);
+    border: 0.5px solid rgb(12, 12, 12);
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+  }
+
+  .bell_icon {
+    color: white;
+    font-size: 23px;
+  }
+
+  .notification_count_button {
+    position: absolute;
+    border-radius: 100px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-left: 135px;
+    margin-top: -20px;
+  }
+
+  .account_pic_image {
+    width: 30px;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .body_main_div {
+    height: 100vh;
+  }
+
+  .body_left_div_big {
+    color: white;
+    background-color: rgb(12, 12, 12);
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 10px;
+    overflow-y: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .body_left_div_big:hover {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin; /* Options: auto, thin, none */
+    scrollbar-color: #888 #b6b6b6; /* Thumb color, track color */
+  }
+
+  .body_left_div_big_1_1 {
+    color: white;
+    flex: 30%;
+  }
+
+  .body_left_div_big_1_2 {
+    color: white;
+    flex: 70%;
+  }
+
+  .left_item_1 {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+  }
+
+  .left_item_2 {
+    display: flex;
+    padding: 10px;
+  }
+
+  .left_item_2:hover {
+    border-radius: 10px;
+    background-color: rgb(54, 54, 54);
+  }
+
+  .line {
+    height: 1px;
+    background-color: rgb(54, 54, 54);
+    border: 0px;
+  }
+
+  .you_main_div {
+    display: inline;
+    color: white;
+  }
+
+  .you_text {
+    padding-right: 5px;
+  }
+
+  .subs_div {
+    display: flex;
+    align-items: center;
+  }
+
+  .sub_img {
+    width: 25px;
+    border-radius: 100px;
+  }
+
+  .blue_dot {
+    color: rgb(78, 181, 255);
+  }
+
+  .body_left_div_small {
+    display: none;
+  }
+
+  .body_right_div {
+    padding-top: 100px;
+    color: black;
+    margin-top: 60px;
+    margin-left: 250px;
+    background-color: rgb(12, 12, 12);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .grid_div {
+    margin-left: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+  }
+
+  .thumb {
+    width: 100%;
+  }
+
+  .grid_content_main_div {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  .grid_content_div_1 {
+    flex: 15%;
+  }
+
+  .grid_content_div_2 {
+    flex: 82%;
+    color: white;
+  }
+
+  .grid_content_div_3 {
+    flex: 3%;
+    padding-left: 15px;
+    color: white;
+  }
+
+  .thumb_acc {
+    border-radius: 100px;
+    width: 40px;
+  }
+
+  .tab_screen_div {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .tab_screen_div {
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    font-size: 12px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+  }
+
+  .tab_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .white_color {
+    color: white;
+  }
+
+  .main_menu_bar {
+    z-index: 100;
+    background-color: rgb(181, 181, 240);
+    display: flex;
+    position: fixed;
+    width: 100%;
+  }
+
+  .main_menu_1 {
+    flex: 20%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger_menu {
+    font-size: 20px !important;
+    color: white !important;
+  }
+
+  .logo_image {
+    width: 135px;
+    margin-left: 10px;
+  }
+
+  .main_menu_2 {
+    flex: 70%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search_box_mic {
+    display: flex;
+    flex: 70%;
+  }
+
+  .dummy_button {
+    flex: 15%;
+    visibility: hidden;
+  }
+
+  .search_box {
+    background-color: rgb(12, 12, 12);
+    border: 0.5px solid rgb(86, 86, 86);
+    flex: 70%;
+    height: 35px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .search_icon_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(65, 65, 65);
+    border-left: 0px;
+    height: 38px;
+    flex: 10%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  .search_icon {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+
+  .mic_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(65, 65, 65);
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    margin-left: 10px;
+  }
+
+  .mic_icon {
+    color: white;
+    font-size: 18px;
+  }
+
+  .main_menu_3 {
+    flex: 10%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .plus_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(44, 44, 44);
+    height: 40px;
+    width: 100px;
+    border-radius: 100px;
+  }
+
+  .plus_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3px;
+  }
+
+  .plus_icon {
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .create_text {
+    font-size: 14px;
+    color: white;
+  }
+
+  .bell_button {
+    background-color: rgb(12, 12, 12);
+    border: 0.5px solid rgb(12, 12, 12);
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+  }
+
+  .bell_icon {
+    color: white;
+    font-size: 23px;
+  }
+
+  .notification_count_button {
+    position: absolute;
+    border-radius: 100px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-left: 135px;
+    margin-top: -20px;
+  }
+
+  .account_pic_image {
+    width: 30px;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .body_main_div {
+    height: 100vh;
+  }
+
+  .body_left_div_big {
+    color: white;
+    background-color: rgb(12, 12, 12);
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 10px;
+    overflow-y: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .body_left_div_big_1_1 {
+    display: none;
+  }
+
+  .body_left_div_big_1_2 {
+    display: none;
+  }
+
+  .left_item_1 {
+    display: none;
+  }
+
+  .left_item_2 {
+    display: none;
+  }
+
+  .line {
+    height: 1px;
+    background-color: rgb(54, 54, 54);
+    border: 0px;
+  }
+
+  .you_main_div {
+    display: inline;
+    color: white;
+  }
+
+  .you_text {
+    padding-right: 5px;
+  }
+
+  .subs_div {
+    display: flex;
+    align-items: center;
+  }
+
+  .sub_img {
+    width: 25px;
+    border-radius: 100px;
+  }
+
+  .blue_dot {
+    color: rgb(78, 181, 255);
+  }
+
+  .body_left_div_small {
+    display: none;
+  }
+
+  .body_right_div {
+    padding-top: 100px;
+    color: black;
+    margin-top: 60px;
+    margin-left: 50px;
+    background-color: rgb(12, 12, 12);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .grid_div {
+    margin-left: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+  }
+
+  .thumb {
+    width: 100%;
+  }
+
+  .grid_content_main_div {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  .grid_content_div_1 {
+    flex: 15%;
+  }
+
+  .grid_content_div_2 {
+    flex: 82%;
+    color: white;
+  }
+
+  .grid_content_div_3 {
+    flex: 3%;
+    padding-left: 15px;
+    color: white;
+  }
+
+  .thumb_acc {
+    border-radius: 100px;
+    width: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tab_screen_div {
+    display: none;
+  }
+
+  .tab_screen {
+    display: none;
+  }
+
+  .white_color {
+    color: white;
+  }
+
+  .main_menu_bar {
+    z-index: 100;
+    background-color: rgb(181, 181, 240);
+    display: flex;
+    position: fixed;
+    width: 100%;
+  }
+
+  .main_menu_1 {
+    flex: 20%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger_menu {
+    font-size: 20px !important;
+    color: white !important;
+  }
+
+  .logo_image {
+    width: 135px;
+    margin-left: 10px;
+  }
+
+  .main_menu_2 {
+    flex: 70%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search_box_mic {
+    display: flex;
+    flex: 70%;
+  }
+
+  .dummy_button {
+    flex: 15%;
+    visibility: hidden;
+  }
+
+  .search_box {
+    background-color: rgb(12, 12, 12);
+    border: 0.5px solid rgb(86, 86, 86);
+    flex: 70%;
+    height: 35px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .search_icon_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(65, 65, 65);
+    border-left: 0px;
+    height: 38px;
+    flex: 10%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  .search_icon {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+
+  .mic_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(65, 65, 65);
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    margin-left: 10px;
+  }
+
+  .mic_icon {
+    color: white;
+    font-size: 18px;
+  }
+
+  .main_menu_3 {
+    flex: 10%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .plus_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(44, 44, 44);
+    height: 40px;
+    width: 100px;
+    border-radius: 100px;
+  }
+
+  .plus_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3px;
+  }
+
+  .plus_icon {
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .create_text {
+    font-size: 14px;
+    color: white;
+  }
+
+  .bell_button {
+    background-color: rgb(12, 12, 12);
+    border: 0.5px solid rgb(12, 12, 12);
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+  }
+
+  .bell_icon {
+    color: white;
+    font-size: 23px;
+  }
+
+  .notification_count_button {
+    position: absolute;
+    border-radius: 100px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-left: 135px;
+    margin-top: -20px;
+  }
+
+  .account_pic_image {
+    width: 30px;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .body_main_div {
+    height: 100vh;
+  }
+
+  .body_left_div_big {
+    display: none;
+  }
+
+  .body_left_div_big_1_1 {
+    display: none;
+  }
+
+  .body_left_div_big_1_2 {
+    display: none;
+  }
+
+  .left_item_1 {
+    display: none;
+  }
+
+  .left_item_2 {
+    display: none;
+  }
+
+  .line {
+    height: 1px;
+    background-color: rgb(54, 54, 54);
+    border: 0px;
+  }
+
+  .you_main_div {
+    display: inline;
+    color: white;
+  }
+
+  .you_text {
+    padding-right: 5px;
+  }
+
+  .subs_div {
+    display: flex;
+    align-items: center;
+  }
+
+  .sub_img {
+    width: 25px;
+    border-radius: 100px;
+  }
+
+  .blue_dot {
+    color: rgb(78, 181, 255);
+  }
+
+  .body_left_div_small {
+    display: none;
+  }
+
+  .body_right_div {
+    padding-top: 100px;
+    color: black;
+    margin-top: 60px;
+    margin-left: 10px;
+    background-color: rgb(12, 12, 12);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .grid_div {
+    margin-left: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+  }
+
+  .thumb {
+    width: 100%;
+  }
+
+  .grid_content_main_div {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  .grid_content_div_1 {
+    flex: 15%;
+  }
+
+  .grid_content_div_2 {
+    flex: 82%;
+    color: white;
+  }
+
+  .grid_content_div_3 {
+    flex: 3%;
+    padding-left: 15px;
+    color: white;
+  }
+
+  .thumb_acc {
+    border-radius: 100px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab_screen_div {
+    display: none;
+  }
+
+  .tab_screen {
+    display: none;
+  }
+
+  .white_color {
+    color: white;
+  }
+
+  .main_menu_bar {
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    width: 100%;
+  }
+
+  .main_menu_1 {
+    flex: 20%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger_menu {
+    font-size: 20px !important;
+    color: white !important;
+  }
+
+  .logo_image {
+    width: 135px;
+    margin-left: 10px;
+  }
+
+  .main_menu_2 {
+    display: none;
+  }
+
+  .search_box_mic {
+    display: none;
+  }
+
+  .dummy_button {
+    display: none;
+  }
+
+  .search_box {
+    display: none;
+  }
+
+  .search_icon_button {
+    display: none;
+  }
+
+  .search_icon {
+    display: none;
+  }
+
+  .mic_button {
+    display: none;
+  }
+
+  .mic_icon {
+    display: none;
+  }
+
+  .main_menu_3 {
+    margin-right: -10px;
+    flex: 10%;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .plus_button {
+    background-color: rgb(44, 44, 44);
+    border: 0.5px solid rgb(44, 44, 44);
+    height: 40px;
+    width: 100px;
+    border-radius: 100px;
+  }
+
+  .plus_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3px;
+  }
+
+  .plus_icon {
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .create_text {
+    font-size: 14px;
+    color: white;
+  }
+
+  .bell_button {
+    background-color: rgb(12, 12, 12);
+    border: 0.5px solid rgb(12, 12, 12);
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+  }
+
+  .bell_icon {
+    color: white;
+    font-size: 23px;
+  }
+
+  .notification_count_button {
+    position: absolute;
+    border-radius: 100px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-left: 135px;
+    margin-top: -20px;
+  }
+
+  .account_pic_image {
+    width: 30px;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .body_main_div {
+    height: 100vh;
+  }
+
+  .body_left_div_big {
+    display: none;
+  }
+
+  .body_left_div_big_1_1 {
+    display: none;
+  }
+
+  .body_left_div_big_1_2 {
+    display: none;
+  }
+
+  .left_item_1 {
+    display: none;
+  }
+
+  .left_item_2 {
+    display: none;
+  }
+
+  .line {
+    height: 1px;
+    background-color: rgb(54, 54, 54);
+    border: 0px;
+  }
+
+  .you_main_div {
+    display: inline;
+    color: white;
+  }
+
+  .you_text {
+    padding-right: 5px;
+  }
+
+  .subs_div {
+    display: flex;
+    align-items: center;
+  }
+
+  .sub_img {
+    width: 25px;
+    border-radius: 100px;
+  }
+
+  .blue_dot {
+    color: rgb(78, 181, 255);
+  }
+
+  .body_left_div_small {
+    display: none;
+  }
+
+  .body_right_div {
+    padding-top: 100px;
+    color: black;
+    margin-top: 60px;
+    margin-left: 10px;
+    background-color: rgb(12, 12, 12);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .grid_div {
+    margin-left: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+  }
+
+  .thumb {
+    width: 100%;
+  }
+
+  .grid_content_main_div {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  .grid_content_div_1 {
+    flex: 15%;
+  }
+
+  .grid_content_div_2 {
+    flex: 82%;
+    color: white;
+  }
+
+  .grid_content_div_3 {
+    flex: 3%;
+    padding-left: 15px;
+    color: white;
+  }
+
+  .thumb_acc {
+    border-radius: 100px;
+    width: 40px;
+  }
+}
